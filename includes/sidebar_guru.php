@@ -7,7 +7,7 @@ function isActiveGuru($pages) {
 ?>
 <div class="w-64 bg-white shadow-lg flex flex-col h-screen fixed top-0 left-0 z-20 overflow-y-auto" id="sidebar">
     <div class="flex items-center gap-3 px-4 py-4 border-b border-gray-200 bg-green-700">
-        <img src="https://kemenag.go.id/storage/shares/m/n/ot/mnot_logo_kemenag-1673249174.png" alt="Logo" class="w-10 h-10 object-contain bg-white rounded-full p-1">
+        <img src="https://e-learning.mtsn1mesuji.sch.id/__statics/img/logo.png" alt="Logo" class="w-10 h-10 object-contain bg-white rounded-full p-1">
         <div>
             <div class="text-white font-bold text-sm leading-tight">CBT MTsN 1</div>
             <div class="text-green-200 text-xs">Mesuji - Guru</div>
@@ -22,6 +22,9 @@ function isActiveGuru($pages) {
         </a>
         <a href="/guru/ruang_ujian.php" class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors <?= isActiveGuru('ruang_ujian.php') ?>">
             <i data-lucide="monitor" class="w-4 h-4"></i> Ruang Ujian
+        </a>
+        <a href="/guru/ubah_password.php" class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors <?= isActiveGuru('ubah_password.php') ?>">
+            <i data-lucide="key" class="w-4 h-4"></i> Ubah Password
         </a>
         <div class="pt-4 border-t border-gray-200 mt-4">
             <a href="/logout.php" onclick="return confirmLogoutGuru()" class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-red-600 hover:bg-red-50 transition-colors">

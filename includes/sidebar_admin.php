@@ -9,7 +9,7 @@ function isActive($pages) {
 <div class="w-64 bg-white shadow-lg flex flex-col h-screen fixed top-0 left-0 z-20 overflow-y-auto" id="sidebar">
     <!-- Logo -->
     <div class="flex items-center gap-3 px-4 py-4 border-b border-gray-200 bg-blue-700">
-        <img src="https://kemenag.go.id/storage/shares/m/n/ot/mnot_logo_kemenag-1673249174.png" alt="Logo" class="w-10 h-10 object-contain bg-white rounded-full p-1">
+        <img src="https://e-learning.mtsn1mesuji.sch.id/__statics/img/logo.png" alt="Logo" class="w-10 h-10 object-contain bg-white rounded-full p-1">
         <div>
             <div class="text-white font-bold text-sm leading-tight">CBT MTsN 1</div>
             <div class="text-blue-200 text-xs">Mesuji</div>
@@ -65,6 +65,9 @@ function isActive($pages) {
         </a>
         <a href="/admin/pengumuman.php" class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors <?= isActive('pengumuman.php') ?>">
             <i data-lucide="megaphone" class="w-4 h-4"></i> Pengumuman
+        </a>
+        <a href="/admin/ubah_password.php" class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors <?= isActive('ubah_password.php') ?>">
+            <i data-lucide="key" class="w-4 h-4"></i> Ubah Password
         </a>
 
         <!-- Logout -->
