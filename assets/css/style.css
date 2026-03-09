@@ -1,0 +1,43 @@
+/* CBT MTsN 1 Mesuji - Custom Styles */
+
+/* Exam timer */
+.timer-warning { color: #f59e0b; animation: pulse 1s infinite; }
+.timer-danger  { color: #ef4444; animation: pulse 0.5s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
+
+/* Sidebar */
+#sidebar { transition: transform 0.3s ease; }
+.sidebar-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:15; }
+
+/* Question grid */
+.q-btn { width:36px; height:36px; border-radius:8px; font-size:12px; font-weight:600; cursor:pointer; border:2px solid transparent; transition:all 0.2s; }
+.q-btn.answered  { background:#22c55e; color:#fff; }
+.q-btn.ragu      { background:#f59e0b; color:#fff; }
+.q-btn.current   { background:#1d4ed8; color:#fff; border-color:#1e40af; }
+.q-btn.empty     { background:#f3f4f6; color:#374151; border-color:#d1d5db; }
+.q-btn.empty:hover { background:#dbeafe; border-color:#93c5fd; }
+
+/* CKEditor fix */
+.ck-editor__editable { min-height: 120px !important; }
+
+/* Tab active */
+.tab-btn.active { background:#1d4ed8 !important; color:#fff !important; }
+
+/* Monitoring status */
+.status-belum   { background:#fee2e2; color:#dc2626; }
+.status-sedang  { background:#fef3c7; color:#d97706; }
+.status-selesai { background:#dcfce7; color:#16a34a; }
+
+/* Modal backdrop */
+.modal-show { display:flex !important; }
+
+/* Toggle switch */
+.toggle-switch { position:relative; display:inline-block; width:52px; height:28px; }
+.toggle-switch input { opacity:0; width:0; height:0; }
+.toggle-slider { position:absolute; cursor:pointer; inset:0; background:#d1d5db; border-radius:28px; transition:.3s; }
+.toggle-slider:before { content:''; position:absolute; height:22px; width:22px; left:3px; bottom:3px; background:#fff; border-radius:50%; transition:.3s; }
+input:checked + .toggle-slider { background:#22c55e; }
+input:checked + .toggle-slider:before { transform:translateX(24px); }
+
+/* Print */
+@media print { #sidebar, footer, .no-print { display:none!important; } .ml-64 { margin-left:0!important; } }
