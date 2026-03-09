@@ -13,7 +13,7 @@ CREATE TABLE admin (
 );
 
 -- Password: 123456 hashed with bcrypt
-INSERT INTO admin VALUES ('A1', 'admin@cbt.com', 'Admin Utama', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', NOW());
+INSERT INTO admin VALUES ('A1', 'admin@cbt.com', 'Admin Utama', '$2y$10$F5ylHOr0SWezwgKNv0H6d.DRQczCqCKZ70oY1sDM56TiGAcpR9ku6', NOW());
 
 CREATE TABLE guru (
   id INT AUTO_INCREMENT PRIMARY KEY,
