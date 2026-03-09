@@ -287,6 +287,7 @@ if ($action === 'selesai') {
             }
         } elseif ($soal['jenis_soal'] === 'esai') {
             $esai_total++;
+            // Essay answers are marked correct if non-empty (manual review not supported)
             if (!empty($jawaban)) { $benar = true; $esai_benar++; }
         } elseif ($soal['jenis_soal'] === 'menjodohkan') {
             $menj_total++;

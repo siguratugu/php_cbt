@@ -205,7 +205,7 @@ cekLogin('guru');
 </div>
 
 <!-- Modal Tambah Waktu -->
-<div id="modal-tambah-waktu" class="fixed inset-0 bg-black bg-opacity-50 z-60 hidden flex items-center justify-center p-4">
+<div id="modal-tambah-waktu" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
     <div class="bg-white rounded-2xl shadow-2xl w-full max-w-sm">
         <div class="px-6 py-4 border-b border-gray-200 flex items-center justify-between">
             <h3 class="font-bold text-gray-800">Tambah Waktu Mengerjakan</h3>
